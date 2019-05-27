@@ -11,7 +11,7 @@
 - [x] CRLMaze .wad and .cfg files
 - [x] CRLMaze core code-base
 - [x] Configurations files to reproduce the experiments
-- [x] **Setup scripts and getting started**
+- [x] Setup scripts and getting started
 
 In this page we provide the code and all the resources related to the paper **Continual Reinforcement Learning in 3D Non-stationary Environments**. If you plan to use some of the resources you'll find in this page, please **cite our [latest paper](https://arxiv.org/abs/1705.03550)**: 
 
@@ -38,14 +38,14 @@ pip3 install numpy scipy matplotlib sacred pymongo
 
 ```bash
 # Install VizDoom
-RUN git clone https://github.com/mwydmuch/ViZDoom ${HOME_DIR}/vizdoom
-RUN pip3 install ${HOME_DIR}/vizdoom
+git clone https://github.com/mwydmuch/ViZDoom ${HOME_DIR}/vizdoom
+pip3 install ${HOME_DIR}/vizdoom
 ```
 
 * [Sacred](https://github.com/IDSIA/sacred): _Experiments Manager_
 
 ```bash
-pip install sacred
+pip3 install sacred
 ```
 
 * [PyTorch](https://pytorch.org/): _Deep Learning framework_
