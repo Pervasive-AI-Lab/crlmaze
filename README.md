@@ -13,7 +13,7 @@
 - [x] Configurations files to reproduce the experiments
 - [x] Setup scripts and getting started
 
-In this page we provide the code and all the resources related to the paper **Continual Reinforcement Learning in 3D Non-stationary Environments**. If you plan to use some of the resources you'll find in this page, please **cite our [latest paper](https://arxiv.org/abs/1705.03550)**: 
+In this page we provide the code and all the resources related to the paper **Continual Reinforcement Learning in 3D Non-stationary Environments**. If you plan to use some of the resources you'll find in this page, please **cite our [latest paper](http://arxiv.org/abs/1905.10112)**: 
 
 	@article{lomonaco2019,
        title={Continual Reinforcement Learning in 3D Non-stationary Environments},
@@ -60,9 +60,9 @@ pip3 install torchvision
 ## Project Structure
 Up to now the projects is structured as follows:
 
-- [`src/`](src): In this folder you can find all the experiments configurations and the caffe definition files. sI, sII and sIII stand for the NI, NC and NIC scenarios, respectively.
-- [`cfgs/`](cfgs): The actual code of the benchmark.
-- [`artifacts/`](artifacts): After the setup it will be created and filled with data needed for the experiments. It will also be used for storing partial computations.
+- [`src/`](src): The actual code for trainig and testing the agents.
+- [`cfgs/`](cfgs): The configuration files for the hyper-parameters and the environment settings.
+- [`artifacts/`](artifacts): It will be created after the setup to maintain the artifacts created by the experiments.
 - [`scripts/`](script): Scripts for the easy setup and run.
 - [`LICENSE`](LICENSE): Standard Creative Commons Attribution 4.0 International License.
 - [`README.md`](README.md): This instructions file.
@@ -102,7 +102,9 @@ This work is licensed under a <a href="https://creativecommons.org/licenses/by/4
 
 ----------------------------------------------
 
-## Author
+## Authors
 
 * [Vincenzo Lomonaco](http://vincenzolomonaco.com) - email: *vincenzo.lomonaco@unibo.it*
 * [Karan Desai](https://kdexd.github.io/) - email: *kdexd@gatech.edu*
+* [Eugenio Culurciello](https://scholar.google.com/citations?user=SeGmqkIAAAAJ&hl=en) - email: *eugenio.culurciello@purdue.edu*
+* [Davide Maltoni](https://www.unibo.it/sitoweb/davide.maltoni/en) - email: *davide.maltoni@unibo.it*
