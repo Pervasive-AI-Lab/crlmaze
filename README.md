@@ -1,5 +1,4 @@
 # Continual Reinforcement Learning in 3D Non-stationary Environments 
-Continual Reinforcement Learning in 3D Non-stationary Environments
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
 [![built with Python3.x](https://img.shields.io/badge/build%20with-python3.x-red.svg)](https://www.python.org/)
@@ -9,17 +8,17 @@ Continual Reinforcement Learning in 3D Non-stationary Environments
 
 ----------------------------------------------
 
-- [ ] CRLMaze .wad and .cfg files
-- [ ] CRLMaze core code-base
-- [ ] Configurations files to reproduce the experiments
-- [ ] **Setup scripts and getting started**
+- [x] CRLMaze .wad and .cfg files
+- [x] CRLMaze core code-base
+- [x] Configurations files to reproduce the experiments
+- [x] **Setup scripts and getting started**
 
 In this page we provide the code and all the resources related to the paper **Continual Reinforcement Learning in 3D Non-stationary Environments**. If you plan to use some of the resources you'll find in this page, please **cite our [latest paper](https://arxiv.org/abs/1705.03550)**: 
 
-	@article{lomonaco2017core50,
+	@article{lomonaco2019,
        title={Continual Reinforcement Learning in 3D Non-stationary Environments},
        author={Lomonaco, Vincenzo and Desai, Karen and Culurciello, Eugenio and Maltoni, Davide},
-       journal={arXiv preprint arXiv:----.-----},
+       journal={arXiv preprint arXiv:1905.10112},
        year={2019}
 	}
 
@@ -32,10 +31,10 @@ In order to extecute the code in the repository you'll need to install the follo
 * Basic dependences:
 
 ```bash
-pip3 install numpy scipy matplotlib sacred pymongo pytest
+pip3 install numpy scipy matplotlib sacred pymongo
 ```
 
-* [ViZDoom](https://pypi.python.org/pypi/numpy/1.6.1): _Matrices operations and stuff_
+* [ViZDoom](https://pypi.python.org/pypi/numpy/1.6.1): _RL API wrapper to ZDoom_
 
 ```bash
 # Install VizDoom
@@ -49,7 +48,7 @@ RUN pip3 install ${HOME_DIR}/vizdoom
 pip install sacred
 ```
 
-* [PyTorch](https://pytorch.org/):
+* [PyTorch](https://pytorch.org/): _Deep Learning framework_
 
 ```bash
 pip3 install http://download.pytorch.org/whl/cu80/torch-0.3.1-cp35-cp35m-linux_x86_64.whl
@@ -61,14 +60,12 @@ pip3 install torchvision
 ## Project Structure
 Up to now the projects is structured as follows:
 
-- [`src/`](confs): In this folder you can find all the experiments configurations and the caffe definition files. sI, sII and sIII stand for the NI, NC and NIC scenarios, respectively.
-- [`cfgs/`](core): The actual code of the benchmark.
-- [`artifacts/`](data): After the setup it will be created and filled with data needed for the experiments. It will also be used for storing partial computations.
+- [`src/`](src): In this folder you can find all the experiments configurations and the caffe definition files. sI, sII and sIII stand for the NI, NC and NIC scenarios, respectively.
+- [`cfgs/`](cfgs): The actual code of the benchmark.
+- [`artifacts/`](artifacts): After the setup it will be created and filled with data needed for the experiments. It will also be used for storing partial computations.
+- [`scripts/`](script): Scripts for the easy setup and run.
 - [`LICENSE`](LICENSE): Standard Creative Commons Attribution 4.0 International License.
 - [`README.md`](README.md): This instructions file.
-- [`run_exps.sh`](run_sI_exps.sh): Simple bash script for running the _"New Instances (NI)"_ experiments with the different architectures and strategies
-- [`run_exps_multienv.sh`](run_sII_exps.sh): Simple bash script for running the _"New Classes (NC)"_ experiments with the different architectures and strategies
-
 ----------------------------------------------
 
 ## Getting Started
@@ -79,14 +76,15 @@ First of all, let's clone the repository:
 git clone https://github.com/vlomonaco/crlmaze.git
 ```
 
-Then, in order to run the experiments and reproduce the benchmark we need to download the pre-trained models and the CORe50 dataset. This can be automatically done using the script provided:
+Then, in order to run the experiments reported in the paper: 
 
 ```bash
-cd core50
-./scripts/bash/fetch_data_and_setup.sh
+cd clrmaze
+sudo chmod a+x scripts/*
+./scripts/setup.sh
 ```
 
-All the data will be downloaded in the [`data/`](data) directory. After this initial step you can directly run the experiments with the bash scripts [`run_exps.sh`](run_exps.sh) or [`run_exps.sh`](run_exps.sh) for the *CRL* and *Multienv* baselines respectively. Since this experiments can take a while (also more than 40h) you can also disable some experiments just by commenting them in the bash script.
+After this initial step you can directly run the experiments with the bash scripts [`./scripts/run_exps.sh`](run_exps.sh) for CRL implemented baselines. Since this experiments can take a while (also more than 40h) you can also disable some experiments just by commenting them in the bash script.
 
 ----------------------------------------------
 
