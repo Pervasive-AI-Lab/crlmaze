@@ -6,9 +6,9 @@
 [![built with ViZDoom](https://img.shields.io/badge/build%20with-ViZDoom1.1.5-blue.svg)](http://vizdoom.cs.put.edu.pl/)
 [![built with Sacred 0.7](https://img.shields.io/badge/build%20with-Sacred0.7-yellow.svg)](https://github.com/IDSIA/sacred)
 
-----------------------------------------------
 ![CRLMaze variations and textures](https://www.dropbox.com/s/yczm8z6x7fznw8q/doom_variations_obs_txt.png?raw=1)
 
+----------------------------------------------
 
 - [x] CRLMaze .wad and .cfg files
 - [x] CRLMaze core code-base
