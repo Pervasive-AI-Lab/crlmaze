@@ -10,11 +10,6 @@
 
 ----------------------------------------------
 
-- [x] CRLMaze .wad and .cfg files
-- [x] CRLMaze core code-base
-- [x] Configurations files to reproduce the experiments
-- [x] Setup scripts and getting started
-
 In this page we provide the code and all the resources related to the paper **Continual Reinforcement Learning in 3D Non-stationary Environments**. If you plan to use some of the resources you'll find in this page, please **cite our [latest paper](http://arxiv.org/abs/1905.10112)**: 
 
 	@article{lomonaco2019,
