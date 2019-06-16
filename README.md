@@ -7,7 +7,7 @@
 [![built with Sacred 0.7](https://img.shields.io/badge/build%20with-Sacred0.7-yellow.svg)](https://github.com/IDSIA/sacred)
 
 ----------------------------------------------
-![CRLMaze variations and textures](https://previews.dropbox.com/p/thumb/AAegptMm326fs5LEESjuG1CH7RCr03KPLkJvu30hRYZuNm4hxTN4igjJ1zY-O4zvs6uJRMJjF4W2AVorw7tAI7rCy6o80jBWBwlJa6b-G0N98N7Ae7LJd7uG3cFcuUIn-V-MqVO1_QuEgGlq-l0V6zWXCfIqh60vqWU0ENRv80pTqFlIEXUl4xsoKbK-z7zSGdQxylVzoLpKcWs1SUq3kOFMWCxIppooN6zbqfZRYuXCiAff8QRNk4WELzWGxeCsDl1v-abW7brRtBHDUmqOerlF3VYu41mVhcZl9T8I9OwNSfzWgH051myBO22OU0lGSfk6m7yjprQTf6yngY-a6fmDbPFF_Yo7eD9oebwdimV9Tan_0ICw5sOTLxqzBV9faPUKhxC4n1Mn7RHpPa6c2zzySzeAA6PoagTGQ5Xpok_urFlG5SDizRAemZltRATcdDYEod382TDW39yJy3viDC91/p.png?fv_content=true&size_mode=5)
+![CRLMaze variations and textures](https://www.dropbox.com/s/yczm8z6x7fznw8q/doom_variations_obs_txt.png)
 
 
 - [x] CRLMaze .wad and .cfg files
